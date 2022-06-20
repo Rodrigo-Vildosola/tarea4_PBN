@@ -2,6 +2,7 @@
 
 #include "grafo.h"
 
+Grafo::Grafo() {}
 
 Grafo::Grafo(int init) {
     for (int i = 0; i < init; i++) add_nodo();

@@ -3,8 +3,12 @@
 
 int main() {
 
-    Grafo vec(3);
+    Grafo vec;
 
+    vec.add_nodo();
+    vec.add_nodo();
+    vec.add_nodo();
+    vec.add_nodo();
     vec.add_nodo();
     vec.add_arco(0, 3);
     vec.add_arco(0, 2);
