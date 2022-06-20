@@ -30,3 +30,13 @@ void Grafo::printGraph() {
         printf("\n");
     }
 }
+
+bool Grafo::hay_arco(int u, int v) {
+    auto x = std::find(vec[u].begin(), vec[u].end(), v);
+    auto y = std::find(vec[v].begin(), vec[v].end(), u);
+
+    if ( x != vec[u].end() && y != vec[v].end()) 
+        return true;
+    else 
+        return false;       
+}
