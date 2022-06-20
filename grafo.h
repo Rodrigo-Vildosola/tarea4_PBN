@@ -2,6 +2,7 @@
 
 #include <iostream>
 #include <vector>
+#include <algorithm>
 
 
 class Grafo {
@@ -15,7 +16,7 @@ class Grafo {
     Grafo(int);
     void add_arco(int, int);
     void add_nodo();
-    void hay_arco(int, int);
+    bool hay_arco(int, int);
     void hay_camino(int, int);
     void printGraph();
 };
