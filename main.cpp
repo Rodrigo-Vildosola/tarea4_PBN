@@ -13,7 +13,7 @@ int main() {
     vec.add_arco(5, 6);
     vec.printGraph();
 
-    if (vec.hay_camino(5, 6)) 
+    if (vec.hay_camino(6, 5)) 
         std::cout << "Hay camino" << std::endl;
     else 
         std::cout << "No hay camino" << std::endl;

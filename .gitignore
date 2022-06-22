@@ -1,4 +1,8 @@
 grafo
-
 *.o
-
+*.so
+__pycache__
+*.pyc 
+*.pyd 
+*.cxx
+libgrafo.py

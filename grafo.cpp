@@ -42,7 +42,6 @@ bool Grafo::hay_arco(int u, int v) {
         return false;       
 }
 
-
 bool Grafo::hay_camino(int u, int v){
     int nodes = vec.size();
 
