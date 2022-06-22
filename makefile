@@ -1,5 +1,5 @@
-CC=g++ -std=c++11
-exe=probador
+CC = g++ -std=c++11
+exe = probador
 rutapython= /Library/Frameworks/Python.framework/Versions/3.10
 
 
