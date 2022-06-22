@@ -1,18 +1,19 @@
+from grafo import *
 
-import libgrafo as lg
+
+def castellano(booleano):
+    if not booleano: 
+        return "no "
+    return ""
 
 
-vec = lg.Grafo(4)
+g = Grafo(3) 
+g.add_arco(1,2) 
+g.add_nodo() 
+g.add_arco(2,3)
 
-vec.add_nodo()
-vec.add_nodo()
-vec.add_nodo()
-
-vec.add_arco(0, 3)
-vec.add_arco(0, 2)
-vec.add_arco(4, 1)
-vec.add_arco(3, 4)
-vec.add_arco(5, 6)
-vec.printGraph()
+print(castellano(g.hay_arco(2,1)) + "hay arco entre los nodos 2 y 1")
+print(castellano(g.hay_camino(1,3)) + "hay camino entre los nodos 1 y 3")
+print(castellano(g.hay_camino(0,3)) + "hay camino entre los nodos 0 y 3")
 
 

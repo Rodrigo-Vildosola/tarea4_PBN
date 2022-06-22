@@ -1,7 +1,6 @@
-%module libgrafo
+%module grafo
 %{
     #include "grafo.h"
 %}
 
-%include"std_string.i"
 %include"grafo.h"
