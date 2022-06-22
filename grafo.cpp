@@ -17,6 +17,7 @@ void Grafo::add_arco(int u, int v) {
     if (vec.size() > (unsigned long) u && vec.size() > (unsigned long) v) {
         vec[u].push_back(v);
         vec[v].push_back(u);
+
     }
     else std::cout << "No existe el nodo " << ((u > v) ? u : v) << "\n";
 }
@@ -39,4 +40,37 @@ bool Grafo::hay_arco(int u, int v) {
         return true;
     else 
         return false;       
+}
+
+
+bool Grafo::hay_camino(int u, int v){
+    int nodes = vec.size();
+
+    int *visited = new int[nodes];
+    for(int i = 0; i < nodes; i++) 
+        visited[i] = 0;
+    
+    std::queue <int> branch;
+    branch.push(u);
+    visited[u] = true;
+    
+    while(!branch.empty()) {
+        u = branch.front();
+        branch.pop();
+
+        for (int i = 0; i < (int) vec[u].size(); i++) {
+            if (vec[u][i] == v) {
+                delete[] visited;
+                return true;
+            }
+            
+            if (visited[vec[u][i]] == false) {
+                branch.push(vec[u][i]);
+                visited[vec[u][i]] = true;
+            }
+        }
+    }
+    
+    delete[] visited;
+    return false;
 }
