@@ -3,6 +3,7 @@
 #include <iostream>
 #include <vector>
 #include <algorithm>
+#include <set>
 #include <queue>
 
 
@@ -19,5 +20,5 @@ class Grafo {
     void add_nodo();
     bool hay_arco(int, int);
     bool hay_camino(int, int);
-    void printGraph();
+    void print_grafo();
 };
