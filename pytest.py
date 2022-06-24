@@ -12,7 +12,6 @@ g = Grafo(3)
 g.add_arco(1,2) 
 g.add_nodo() 
 g.add_arco(2, 3)
-g.add_arco(3, 2)
 
 print()
 

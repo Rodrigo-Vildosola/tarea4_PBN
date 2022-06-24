@@ -23,12 +23,10 @@ void Grafo::add_arco(int u, int v) {
 }
 
 void Grafo::print_grafo() {
-    for (int i = 0; (unsigned long) i < vec.size(); i++) {
-        std::cout << "\n Conexiones del nodo: " << i
-             << "\n -> ";
-        for (auto x : vec[i])
-            std::cout << " : " << x;
-        printf("\n");
+    for (auto i : vec) {
+        for (auto x : i)
+            std::cout << x << " : ";
+        std::cout << std::endl;
     }
 }
 
