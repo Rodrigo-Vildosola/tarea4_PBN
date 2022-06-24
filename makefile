@@ -1,6 +1,5 @@
 CC = g++ 
-flags = -std=c++11
-exe = probador
+flags = -std=c++11 -Wall -Wundef -Wpedantic -Werror -Wextra -Wuninitialized -Winit-self
 rutapython = /Library/Frameworks/Python.framework/Versions/3.10
 
 

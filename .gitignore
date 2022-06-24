@@ -6,3 +6,4 @@ __pycache__
 *.pyd 
 *.cxx
 grafo.py
+.DS_Store
